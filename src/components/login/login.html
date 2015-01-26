@@ -1,0 +1,30 @@
+<div ng-controller="LoginCtrl">
+  <div class="overlay" ng-click="hideOverlay()" ng-show="loginBox"></div>
+
+  <div class="container modal login" ng-show="loginBox">
+    <div class="close-modal">
+      <i class="fa fa-close" ng-click="hideOverlay()"></i>
+    </div>
+    <h4>Login</h4>
+    <form ng-keydown="($event.keyCode===13)?login():0">
+      <div class="large-12 columns">
+        <div class="input-container">
+          <input required ng-model="email" type="text" placeholder="hello@nus.com" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="password" type="password" placeholder="MySecretPassword" id="password">
+          <label for="password">Password</label>
+        </div>
+
+        <a href="#" class="button red" ng-click="login()">Login</a>
+      </div>
+    </form>
+    <div class="large-12 columns forgot-password">
+      <p ng-click="forgotPassword()">Forgot your password?</p>
+    </div>
+    <div class="large-12 columns error">
+      <p>{{error}}</p>
+    </div>
+  </div>
+</div>

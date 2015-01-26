@@ -1,4 +1,5 @@
 @import '../components/navbar/navbar.scss';
+@import '../components/footer/footer.scss';
 @import '../components/products/products.scss';
 
 * {
@@ -6,30 +7,189 @@
 }
 
 html, body {
-  background-color: #eeeeee;
+  background-color: #fafafa;
   height: 100%;
 }
 
-html, body, p, a, ul, li, span {
+html, body, p, a, ul, li, span, h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   box-sizing: border-box;
 }
 
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -90px;
+}
+
 .main-bg {
-  background-image: url('http://placehold.it/2000x2000.png');
+  background-image: url('http://www.internetguncatalog.com/Portals/0/Warehouse%2006-08-07%20(26).jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 280px;
+  height: 550px;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 200px;
+  // margin-top: 45px;
   h1 {
     text-align: center;
-    font-weight: 100;
+    font-weight: 900;
     max-width: 960px;
+    margin: 0 auto;
+    color: #fff;
   }
   .action-group {
     margin: 0 auto;
     text-align: center;
+    margin-top: 50px;
+  }
+}
+.darken {
+  background-color: rgba(0,0,0,0.55);
+  height: 550px;
+  width: 100%;
+  position: absolute;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.modal {
+  background-color: #ffffff;
+  position: fixed;
+  top: 90px;
+  left: 25%;
+  width: 50%;
+  height: 380px;
+  box-shadow: 0px 0px 6px #ccc;
+  border-radius: 3px;
+  z-index: 3;
+  h4 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+form {
+  input[type="text"], input[type="password"], textarea {
+    border: 1px solid #2C3E50;
+    border-radius: 3px;
+    &:focus {
+      border: 2px solid #2C3E50;
+      background: #ffffff;
+      box-shadow: none;
+    }
+  }
+}
+.input-container {
+  width: 100%;
+  position: relative;
+  input, textarea {
+    &.disabled {
+      background-color: #f5f5f5;
+    }
+    &::-webkit-input-placeholder {
+      color: #ffffff;
+    }
+    &:-moz-input-placeholder {
+      color: #ffffff;
+    }
+    &::-moz-input-placeholder {
+      color: #ffffff;
+    }
+    &:-ms-input-placeholder {
+      color: #ffffff;
+    }
+    &:focus::-webkit-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:focus:-moz-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:focus::-moz-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:focus:-ms-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:valid::-webkit-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:valid:-moz-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:valid::-moz-input-placeholder {
+      color: #a9a9a9;
+    }
+    &:valid:-ms-input-placeholder {
+      color: #a9a9a9;
+    }
+  }
+  label {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    color: #2C3E50;
+    white-space: nowrap;
+    cursor: text;
+    transition: all 200ms ease;
+  }
+  input:focus ~label, input:valid ~label, textarea:focus ~label, textarea:valid ~label, label.disabled {
+    font-size: 14px;
+    color: #2C3E50;
+    left: 4px;
+    top: -12px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+  }
+}
+
+.button {
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+  transition: all 150ms ease-in;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  &.default {
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #fff;
+    color: #fff;
+    &:hover {
+      background-color: #EF4836;
+      color: #fff;
+      border: 3px solid #EF4836;
+    }
+  }
+  &.red {
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #EF4836;
+    color: #EF4836;
+    &:hover {
+      background-color: #EF4836;
+      color: #fff;
+      border: 3px solid #EF4836;
+    }
   }
 }

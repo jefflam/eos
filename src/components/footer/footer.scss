@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  background-color: #363842;
+  color: #efefef;
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 14px;
+      color: #efefef;
+      position: relative;
+      font-weight: 600;
+      top: 13px;
+      margin-left: 5px;
+    }
+  }
+  p {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-weight: 600;
+  }
+}
+footer, .push {
+  height: 90px;
+}

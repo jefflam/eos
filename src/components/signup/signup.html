@@ -1,0 +1,35 @@
+<div ng-controller="SignupCtrl">
+  <div class="overlay" ng-click="hideOverlay()" ng-show="signupBox"></div>
+
+  <div class="container modal signup" ng-show="signupBox">
+    <div class="close-modal">
+      <i class="fa fa-close" ng-click="hideOverlay()"></i>
+    </div>
+    <h4>SIGN UP</h4>
+    <p>Sign up to post news, articles, events, jobs as well as to comment.</p>
+    <form ng-keydown="($event.keyCode===13)?signup():0">
+      <div class="large-12 columns">
+        <div class="input-container">
+          <input required ng-model="name" type="text" id="fullname" placeholder="Steve Jobs">
+          <label for="fullname">Full Name</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="email" type="text" id="email" placeholder="stevejobs@apple.com">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="password" type="password" id="password" placeholder="MySecretPassword">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="passwordAgain" type="password" id="passwordAgain" placeholder="MySecretPassword">
+          <label for="passwordAgain">Password Again</label>
+        </div>
+        <a href="#" class="button red" ng-click="signup()">Sign Up</a>
+      </div>
+    </form>
+    <div class="large-12 columns error">
+      <p>{{error}}</p>
+    </div>
+  </div>
+</div>

@@ -1,24 +1,16 @@
-<div class="products" ng-controller="ProductsCtrl">
-  <ul class="large-12 columns">
-    <li class="product" ng-repeat="product in products">
-      <img src="{{product.images.image1}}" alt="Product">
-      <section class="meta-data">
-        <p class="title">{{product.title}}</p>
-        <p class="price">Price: ${{product.originalPrice}}- {{product.discountedPrice}}</p>
-        <p class="orders">Orders: {{product.currentOrders}} / {{product.ordersNeeded}}</p>
-      </section>
-    </li>
-  </ul>
-
-  <!-- <ul>
-    <li ng-repeat="product in endedProducts">
-      <img src="{{product.images.image[0]}}" alt="Product">
-      <section class="meta-data">
-        <p class="title">{{product.title}}</p>
-        <p class="original-price">{{product.originalPrice}}</p>
-        <p class="discounted-price">{{product.discountedPrice}}</p>
-        <p class="orders">{{product.currentOrders}} / {{product.ordersNeeded}}</p>
-      </section>
-    </li>
-  </ul> -->
+<div class="row">
+  <div class="large-12 columns">
+    <div class="products" ng-controller="ProductsCtrl">
+      <ul class="large-12 columns">
+        <li class="product" ng-repeat="product in products">
+          <img src="{{product.images.image1}}" alt="Product">
+          <section class="meta-data">
+            <p class="title">{{product.title}}</p>
+            <p class="price">Price: <strike>${{product.originalPrice}}</strike> ${{product.discountedPrice}}</p>
+            <p class="orders">Orders: {{product.currentOrders}} / {{product.ordersNeeded}}</p>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

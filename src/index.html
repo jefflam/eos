@@ -25,7 +25,7 @@
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-class="{noScroll: noScroll}">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -65,10 +65,13 @@
     <!-- build:js({.tmp,src}) scripts/app.js -->
     <!-- inject:js -->
     <script src="app/index.js"></script>
+    <script src="app/services/users/users.service.js"></script>
     <script src="app/services/products/products.service.js"></script>
-    <script src="app/main/main.controller.js"></script>
+    <script src="components/signup/signup.controller.js"></script>
     <script src="components/products/products.controller.js"></script>
     <script src="components/navbar/navbar.controller.js"></script>
+    <script src="components/login/login.controller.js"></script>
+    <script src="app/main/main.controller.js"></script>
     <!-- endinject -->
 
     <!-- inject:partials -->

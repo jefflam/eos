@@ -1,15 +1,45 @@
-<nav class="top-bar contain-to-grid fixed" ng-controller="NavbarCtrl">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="https://github.com/Swiip/generator-gulp-angular">EOS</a></h1>
-    </li>
-  </ul>
+<div class="contain-to-grid" ng-controller="NavbarCtrl">
+  <nav class="top-bar website">
+    <ul class="title-area">
+      <li class="name">
 
-  <section class="top-bar-section">
-    <ul class="right">
-    <li><a ng-href="#">ABOUT</a></li>
-      <li><a ng-href="#">LOGIN</a></li>
-      <li><a ng-href="#">SIGN UP</a></li>
+      </li>
     </ul>
-  </section>
-</nav>
+
+    <section class="top-bar-section">
+      <ul class="middle">
+        <span class="logo"><a href="/#">EOS (SG)</a></span>
+      </ul>
+      <ul class="right">
+        <li><a ng-href="#" ng-click="showSignup()" ng-hide="user">SIGN UP</a></li>
+        <li><a ng-href="#" ng-click="showLogin()" ng-hide="user">LOGIN</a></li>
+
+        <li><a ng-href="#" ng-click="logout()" ng-show="user">LOGOUT</a></li>
+        <li><a ng-href="#/profile/{{user.id}}" ng-click="showProfile(user.id)" ng-show="user" href="">{{ user.name | uppercase }}</a></li>
+        <li><a ng-href="#" ng-click="showPost()" ng-show="user">SUBMIT</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  <nav class="top-bar mobile">
+    <div class="title">
+      <p class="logo"><a href="/#">EOS (SG)</a></p>
+    </div>
+    <div class="menu-right">
+      <ul>
+        <li ng-click="showProfileSubMenuMobile()" ng-hide="profileSubMenuMobile"></li>
+        <li ng-click="hideProfileSubMenuMobile()" ng-show="profileSubMenuMobile"></li>
+      </ul>
+    </div>
+    <div class="sub-menu right" ng-show="profileSubMenuMobile">
+      <ul>
+        <li><a ng-href="#" ng-click="showSignup()" ng-hide="user">SIGN UP</a></li>
+        <li><a ng-href="#" ng-click="showLogin()" ng-hide="user">LOGIN</a></li>
+
+        <li><a ng-href="#" ng-click="logout()" ng-show="user">LOGOUT</a></li>
+        <li><a ng-href="#" ng-show="user">{{ user.name | uppercase }}</a></li>
+        <li><a ng-href="#" ng-click="showPost()" ng-show="user">SUBMIT</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,3 +1,105 @@
-.navbar {
-  background-color: #cccccc;
+.contain-to-grid {
+  // background-color: #EF4836;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  color: #ffffff;
+  height: 51px;
+  nav {
+    // background-color: #EF4836;
+    background-color: rgba(0,0,0,0);
+    .logo {
+      a {
+        color: #ffffff;
+        font-size: 20px;
+        &:hover, &:active, &:focus {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+    section.top-bar-section {
+      ul {
+        &.left, &.right {
+          position: relative;
+          z-index: 3;
+          display: block;
+        }
+        &.right {
+          float: right;
+        }
+        &.middle {
+          text-align: center;
+          position: absolute;
+          width: 100%;
+          display: block;
+          z-index: 2;
+          span {
+            position: relative;
+            top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+        li {
+          float: inherit;
+          background: none;
+          margin-top: 3px;
+          a {
+            float: inherit;
+            background: none !important;
+            color: #ffffff;
+            font-weight: 900;
+            font-size: 14px;
+            &:hover {
+              color: #dddddd;
+            }
+          }
+        }
+      }
+    }
+    &.website {
+      display: block;
+    }
+    &.mobile {
+      display: none;
+      .title {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .menu-left, .menu-right {
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        ul {
+          margin: 0;
+          li {
+            width: 44px;
+            height: 44px;
+            display: inline-block;
+            padding-top: 9px;
+            padding-left: 14px;
+          }
+        }
+      }
+      .menu-left {
+        left: 0px;
+      }
+      .menu-right {
+        right: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .contain-to-grid {
+    nav {
+      &.website {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+      }
+    }
+  }
 }
