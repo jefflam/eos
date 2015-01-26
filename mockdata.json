@@ -1,0 +1,209 @@
+{
+  "users": {
+    "user1": {
+      "id": "user1",
+      "name": "Kevin Spacey",
+      "email": "kevinspacey@gmail.com",
+      "password": "hashedpassword",
+      "joined": 1419920458667,
+      "profilePicture": "http://google.com/profile",
+      "admin": false,
+      "submissions": {
+        "product1": true,
+        "product2": true,
+        "product3": true
+      },
+      "purchases": {
+        "product1": true,
+        "product2": true,
+        "product3": true
+      }
+    },
+    "user2": {
+      "id": "user2",
+      "name": "Emma Watson",
+      "email": "ewatson@gmail.com",
+      "password": "hashedpassword",
+      "joined": 1419920458667,
+      "profilePicture": "http://google.com/profile",
+      "admin": false,
+      "submissions": {
+        "product1": true,
+        "product2": true,
+        "product3": true
+      },
+      "purchases": {
+        "product1": true,
+        "product2": true,
+        "product3": true
+      }
+    },
+    "user3": {
+      "id": "user3",
+      "name": "Natalie Portman",
+      "email": "natport@gmail.com",
+      "password": "hashedpassword",
+      "joined": 1419920458667,
+      "profilePicture": "http://google.com/profile",
+      "admin": false,
+      "submissions": {
+        "product1": true,
+        "product2": true,
+        "product3": true
+      },
+      "purchases": {
+        "product1": true,
+        "product2": true,
+        "product3": true
+      }
+    }
+  },
+  "products": {
+    "product1": {
+      "title": "Seinheiser Earpiece",
+      "category": "IT Gadgets",
+      "description": "An awesome earpiece",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 100,
+      "discountedPrice": 90,
+      "ordersNeeded": 50,
+      "currentOrders": 5,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      }
+    },
+    "product2": {
+      "title": "Helicopter Drones",
+      "category": "IT Gadgets",
+      "description": "A awesome drone",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 200,
+      "discountedPrice": 100,
+      "ordersNeeded": 20,
+      "currentOrders": 8,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      }
+    },
+    "product3": {
+      "title": "GoPro",
+      "category": "IT Gadgets",
+      "description": "Awesome camera",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 400,
+      "discountedPrice": 200,
+      "ordersNeeded": 20,
+      "currentOrders": 2,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      }
+    },
+    "product4": {
+      "title": "Oakley Sunglasses",
+      "category": "Accessories",
+      "description": "An awesome sunglass",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 399,
+      "discountedPrice": 20,
+      "ordersNeeded": 20,
+      "currentOrders": 10,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      }
+    },
+    "product5": {
+      "title": "Daniel Wellington Watch",
+      "category": "Accessories",
+      "description": "An awesome watch",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 300,
+      "discountedPrice": 200,
+      "ordersNeeded": 50,
+      "currentOrders": 5,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      }
+    },
+    "product6": {
+      "title": "Amazon Kindle",
+      "category": "IT Gadgets",
+      "description": "An awesome reading device",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 150,
+      "discountedPrice": 100,
+      "ordersNeeded": 25,
+      "currentOrders": 5,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      }
+    },
+    "product7": {
+      "title": "WD Harddisk",
+      "category": "IT Gadgets",
+      "description": "An awesome harddisk",
+      "submitted": {
+        "userId": "user1",
+        "name": "Kevin Spacey"
+      },
+      "timeSubmitted": 1419920458667,
+      "originalPrice": 200,
+      "discountedPrice": 150,
+      "ordersNeeded": 50,
+      "currentOrders": 5,
+      "status": "reservations",
+      "images": {
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png",
+        "image": "http://placehold.it/100x100.png"
+      },
+      "productOptions": {
+        "option": "500GB",
+        "option": "1TB",
+        "option": "2TB",
+        "option": "5TB"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<ul>
+  <li ng-repeat="product in liveProducts">
+    <img src="{{product.images.image[0]}}" alt="Product">
+    <section class="meta-data">
+      <p class="title">{{product.title}}</p>
+      <p class="original-price">{{product.originalPrice}}</p>
+      <p class="discounted-price">{{product.discountedPrice}}</p>
+      <p class="orders">{{product.currentOrders}} / {{product.ordersNeeded}}</p>
+    </section>
+  </li>
+</ul>
+
+<ul>
+  <li ng-repeat="product in endedProducts">
+    <img src="{{product.images.image[0]}}" alt="Product">
+    <section class="meta-data">
+      <p class="title">{{product.title}}</p>
+      <p class="original-price">{{product.originalPrice}}</p>
+      <p class="discounted-price">{{product.discountedPrice}}</p>
+      <p class="orders">{{product.currentOrders}} / {{product.ordersNeeded}}</p>
+    </section>
+  </li>
+</ul>

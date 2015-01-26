@@ -1,0 +1,21 @@
+{
+  "name": "eos",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "angular-animate": "~1.3.4",
+    "angular-resource": "~1.3.4",
+    "angular-ui-router": "~0.2.13",
+    "foundation": "~5.4.7",
+    "angular": "~1.3.4",
+    "animate.css": "~3.2.0",
+    "firebase": "~2.1.1",
+    "angularfire": "~0.9.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.4"
+  },
+  "resolutions": {
+    "angular": "~1.3.4"
+  }
+}

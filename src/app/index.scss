@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  background-color: #eeeeee;
+  height: 100%;
+}
+
+html, body, p, a, ul, li, span {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.main-bg {
+  background-image: url('http://placehold.it/2000x2000.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  h1 {
+    text-align: center;
+    font-weight: 100;
+    max-width: 960px;
+  }
+  .action-group {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
