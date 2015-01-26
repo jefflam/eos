@@ -1,0 +1,34 @@
+.products {
+  ul {
+    list-style: none;
+    li.product {
+      width: 280px;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      height: 280px;
+      margin: 10px;
+      display: inline-block;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+      p {
+        margin: 0;
+        margin-left: 10px;
+        &.title {
+          font-weight: 600;
+          font-size: 14px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        &.price {
+          font-size: 13px;
+        }
+        &.orders {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

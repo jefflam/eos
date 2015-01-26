@@ -1,3 +1,6 @@
+@import '../components/navbar/navbar.scss';
+@import '../components/products/products.scss';
+
 * {
   margin: 0;
 }
@@ -9,6 +12,7 @@ html, body {
 
 html, body, p, a, ul, li, span {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  box-sizing: border-box;
 }
 
 .main-bg {

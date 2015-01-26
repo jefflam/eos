@@ -1,12 +1,11 @@
 'use strict';
 
 angular.module('eos')
-  .controller('ProductsCtrl', ['$scope', 'ProductService', function($scope, ProductService) {
+  .controller('ProductsCtrl', ['$scope', 'ProductsService', function($scope, ProductsService) {
     $scope.products = [];
 
-    ProductService.getProducts()
+    ProductsService.getProducts()
       .then(function(products) {
         $scope.products = products;
-        console.log(products);
       });
   }]);

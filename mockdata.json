@@ -74,9 +74,9 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       }
     },
     "product2": {
@@ -94,9 +94,9 @@
       "currentOrders": 8,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       }
     },
     "product3": {
@@ -114,9 +114,9 @@
       "currentOrders": 2,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       }
     },
     "product4": {
@@ -134,9 +134,9 @@
       "currentOrders": 10,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       }
     },
     "product5": {
@@ -154,9 +154,9 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       }
     },
     "product6": {
@@ -174,9 +174,9 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       }
     },
     "product7": {
@@ -194,9 +194,9 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png",
-        "image": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/100x100.png",
+        "image2": "http://placehold.it/100x100.png",
+        "image3": "http://placehold.it/100x100.png"
       },
       "productOptions": {
         "option": "500GB",

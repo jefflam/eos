@@ -6,11 +6,12 @@ angular.module('eos')
       getProducts: function() {
         var q = $q.defer();
         var productsRef = new Firebase(FIREBASE_URL + 'products');
-        var products = [];
+        var sync = $firebase(productsRef);
+        var syncArray = sync.$asArray();
 
-        console.log(productsRef);
-        q.resolve();
-
+        syncArray.$loaded(function() {
+          q.resolve(syncArray);
+        });
         return q.promise;
       }
     };
