@@ -93,7 +93,7 @@ angular.module('eos')
         var usersRef = new Firebase(FIREBASE_URL + 'users');
 
         usersRef.child(userId).once('value', function(user) {
-          q.resolve(user.val());
+          q.resolve(user);
         });
 
         return q.promise;
