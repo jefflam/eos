@@ -2,14 +2,17 @@
   <div class="large-12 columns">
     <div class="products" ng-controller="ProductsCtrl">
       <ul class="large-12 columns">
-        <li class="product" ng-repeat="product in products">
-          <img src="{{product.images.image1}}" alt="Product">
-          <section class="meta-data">
-            <p class="title">{{product.title}}</p>
-            <p class="price">Price: <strike>${{product.originalPrice}}</strike> ${{product.discountedPrice}}</p>
-            <p class="orders">Orders: {{product.currentOrders}} / {{product.ordersNeeded}}</p>
-          </section>
-        </li>
+        <a href="" ng-href="#/product/{{product.$id}}" ng-repeat="product in products" ng-click="showProduct(product.$id)">
+          <li class="product">
+            <div class="image" style="background-image: url('{{product.images.image1}}')"></div>
+            <!-- <img src="{{product.images.image1}}" alt="Product"> -->
+            <section class="meta-data">
+              <p class="title">{{product.title}}</p>
+              <p class="price">Price: <strike>${{product.originalPrice}}</strike> ${{product.discountedPrice}}</p>
+              <p class="orders">Orders: {{product.currentOrders}} / {{product.ordersNeeded}}</p>
+            </section>
+          </li>
+        </a>
       </ul>
     </div>
   </div>

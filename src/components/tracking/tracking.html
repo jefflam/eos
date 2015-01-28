@@ -1,0 +1,42 @@
+<div ng-controller="TrackingCtrl">
+  <div class="overlay" ng-click="hideOverlay()" ng-show="trackingBox"></div>
+
+  <div class="container modal tracking" ng-show="trackingBox">
+    <div class="row">
+      <ul class="large-12 columns">
+        <li class="tabs large-6 columns">Reserved</li>
+        <li class="tabs large-6 columns">Purchased</li>
+      </ul>
+    </div>
+    <div class="row" ng-show="reservedProductsTab">
+      <div class="large-12 columns">
+        <ul>
+          <li class="product" ng-repeat="product in reservedProducts">
+            <div class="image large-3 columns"></div>
+            <div class="meta-data large-9 columns">
+              <p class="title">{{product.title}}</p>
+              <p class="price">{{product.discountedPrice}}</p>
+              <p class="status">{{product.status}}</p>
+              <a href="" class="button red">Make Full Payment</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" ng-show="purchasedProductsTab">
+      <div class="large-12 columns">
+        <ul>
+          <li class="product" ng-repeat="product in purchasedProducts">
+            <div class="image large-3 columns"></div>
+            <div class="meta-data large-9 columns">
+              <p class="title">{{product.title}}</p>
+              <p class="price">{{product.discountedPrice}}</p>
+              <p class="status">{{product.status}}</p>
+              <p class="tracking-code">{{product.trackingCode}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

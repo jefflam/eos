@@ -1,0 +1,65 @@
+<div ng-controller="ProductCtrl">
+  <div class="overlay" ng-click="hideOverlay()" ng-show="productBox"></div>
+
+  <div class="product-page modal" ng-show="productBox">
+    <div class="row product-background">
+      <div class="large-6 medium-6 columns">
+        <!-- <img src="{{product.images.image1}}" alt=""> -->
+        <div class="main-photo" style="background-image: url('{{mainPhoto || product.images.image1}}');"></div>
+        <div class="row">
+          <ul class="extra-photos">
+            <li ng-repeat="photo in product.images">
+              <div class="photo" style="background-image: url('{{photo}}')" alt="" ng-click="changeMainPhoto(photo)">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <div class="row">
+          <p class="title">
+            {{product.title}}
+          </p>
+          <p class="price">
+            <b>PRICE:</b> <strike>${{product.originalPrice}}</strike> ${{product.discountedPrice}}
+          </p>
+          <p class="orders">
+            <b>STATUS:</b> {{product.currentOrders}} / {{product.ordersNeeded}}
+          </p>
+          <p class="description" ng-hide="reservation">
+            <b>DESCRIPTION</b>
+            <br>
+            {{product.description}}
+          </p>
+          <form ng-keydown="($event.keyCode===13)?login():0" ng-show="reservation">
+            <div class="large-12 columns">
+              <p>
+                <b>The Product Will Be Delivered To:</b>
+                <br>
+                {{user.address1}}
+                <br>
+                {{user.address2}}
+                <br>
+                {{user.country}} {{user.address3}}
+              </p>
+              <div class="input-container">
+                <input required ng-model="variety" type="text" placeholder="Normal" id="variety">
+                <label for="variety">Variety</label>
+              </div>
+              <div class="input-container">
+                <input required ng-model="quantity" type="number" placeholder="Normal" id="quantity">
+                <label for="quantity">Quantity</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row" ng-hide="reservation">
+          <a href="" class="button red medium large-12 columns" ng-click="showReservationForm()">RESERVE</a>
+        </div>
+        <div class="row" ng-show="reservation">
+          <a href="" class="button red medium">CONFIRM RESERVATION</a>
+          <a href="" class="button red medium" ng-click="hideReservationForm()">CANCEL</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

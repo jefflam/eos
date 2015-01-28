@@ -8,15 +8,79 @@
       "joined": 1419920458667,
       "profilePicture": "http://google.com/profile",
       "admin": false,
-      "submissions": {
-        "product1": true,
-        "product2": true,
-        "product3": true
+      "address1": "Pandan Gardens",
+      "address2": "Block 401 #05-04 S600401",
+      "address3": "600401",
+      "country": "Singapore",
+      "reservations": {
+        "product1": {
+          "id": "1",
+          "title": "Seinheiser Earpiece",
+          "category": "IT Gadgets",
+          "description": "An awesome earpiece",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 100,
+          "discountedPrice": 90,
+          "ordersNeeded": 50,
+          "currentOrders": 5,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/b75d4b8908797c4558ccb50a58a15e65/100000178349_03-800.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/320x299/64b457aa1353c465089a499c54862f9e/CX300II_BLK_detail.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/534x383/423411d7e1bfda1f34877ec0613a2168/1239490914.png",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/300x300/ede60c5952cc91cc0e40b3a3ca0643c4/300x300px-LS-b7f42953_0020080304-0020080304.jpg"
+          }
+        },
+        "product2": {
+          "id": "2",
+          "title": "Helicopter Drones",
+          "category": "IT Gadgets",
+          "description": "A awesome drone",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 200,
+          "discountedPrice": 100,
+          "ordersNeeded": 20,
+          "currentOrders": 8,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/a80a4237e37335643b6afd12df30254f/sj4000-wifi-1080p-full-hd-action-camera-sport-dvr.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1052x380/6174d35914c884c1a8143cec750a1d63/sj40002.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x347/9121b76593d8f6003a3a06a4a1bafdac/SJ4000-7-colors.jpg",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/600x600/26c4bea76814d65595ed461f8c4ae968/sj4000_action_camera_LRG.jpg"
+          }
+        }
       },
       "purchases": {
-        "product1": true,
-        "product2": true,
-        "product3": true
+        "product1": {
+          "id": "1",
+          "title": "Seinheiser Earpiece",
+          "category": "IT Gadgets",
+          "description": "An awesome earpiece",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 100,
+          "discountedPrice": 90,
+          "ordersNeeded": 50,
+          "currentOrders": 5,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/b75d4b8908797c4558ccb50a58a15e65/100000178349_03-800.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/320x299/64b457aa1353c465089a499c54862f9e/CX300II_BLK_detail.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/534x383/423411d7e1bfda1f34877ec0613a2168/1239490914.png",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/300x300/ede60c5952cc91cc0e40b3a3ca0643c4/300x300px-LS-b7f42953_0020080304-0020080304.jpg"
+          }
+        }
       }
     },
     "user2": {
@@ -27,15 +91,78 @@
       "joined": 1419920458667,
       "profilePicture": "http://google.com/profile",
       "admin": false,
-      "submissions": {
-        "product1": true,
-        "product2": true,
-        "product3": true
+      "address1": "Pandan Gardens",
+      "address2": "Block 401 #05-04 S600401",
+      "address3": "600401",
+      "country": "Singapore",
+      "reservations": {
+        "product2": {
+          "id": "2",
+          "title": "Helicopter Drones",
+          "category": "IT Gadgets",
+          "description": "A awesome drone",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 200,
+          "discountedPrice": 100,
+          "ordersNeeded": 20,
+          "currentOrders": 8,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/a80a4237e37335643b6afd12df30254f/sj4000-wifi-1080p-full-hd-action-camera-sport-dvr.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1052x380/6174d35914c884c1a8143cec750a1d63/sj40002.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x347/9121b76593d8f6003a3a06a4a1bafdac/SJ4000-7-colors.jpg",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/600x600/26c4bea76814d65595ed461f8c4ae968/sj4000_action_camera_LRG.jpg"
+          }
+        },
+        "product3": {
+          "id": "3",
+          "title": "GoPro",
+          "category": "IT Gadgets",
+          "description": "Awesome camera",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 400,
+          "discountedPrice": 200,
+          "ordersNeeded": 20,
+          "currentOrders": 2,
+          "status": "reservations",
+          "images": {
+            "image1": "http://placehold.it/560x400.png",
+            "image2": "http://placehold.it/560x400.png",
+            "image3": "http://placehold.it/560x400.png"
+          }
+        }
       },
       "purchases": {
-        "product1": true,
-        "product2": true,
-        "product3": true
+        "product2": {
+          "id": "2",
+          "title": "Helicopter Drones",
+          "category": "IT Gadgets",
+          "description": "A awesome drone",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 200,
+          "discountedPrice": 100,
+          "ordersNeeded": 20,
+          "currentOrders": 8,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/a80a4237e37335643b6afd12df30254f/sj4000-wifi-1080p-full-hd-action-camera-sport-dvr.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1052x380/6174d35914c884c1a8143cec750a1d63/sj40002.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x347/9121b76593d8f6003a3a06a4a1bafdac/SJ4000-7-colors.jpg",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/600x600/26c4bea76814d65595ed461f8c4ae968/sj4000_action_camera_LRG.jpg"
+          }
+        }
       }
     },
     "user3": {
@@ -46,20 +173,149 @@
       "joined": 1419920458667,
       "profilePicture": "http://google.com/profile",
       "admin": false,
-      "submissions": {
-        "product1": true,
-        "product2": true,
-        "product3": true
+      "address1": "Pandan Gardens",
+      "address2": "Block 401 #05-04 S600401",
+      "address3": "600401",
+      "country": "Singapore",
+      "reservations": {
+        "product1": {
+          "id": "1",
+          "title": "Seinheiser Earpiece",
+          "category": "IT Gadgets",
+          "description": "An awesome earpiece",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 100,
+          "discountedPrice": 90,
+          "ordersNeeded": 50,
+          "currentOrders": 5,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/b75d4b8908797c4558ccb50a58a15e65/100000178349_03-800.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/320x299/64b457aa1353c465089a499c54862f9e/CX300II_BLK_detail.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/534x383/423411d7e1bfda1f34877ec0613a2168/1239490914.png",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/300x300/ede60c5952cc91cc0e40b3a3ca0643c4/300x300px-LS-b7f42953_0020080304-0020080304.jpg"
+          }
+        },
+        "product2": {
+          "id": "2",
+          "title": "Helicopter Drones",
+          "category": "IT Gadgets",
+          "description": "A awesome drone",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 200,
+          "discountedPrice": 100,
+          "ordersNeeded": 20,
+          "currentOrders": 8,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/a80a4237e37335643b6afd12df30254f/sj4000-wifi-1080p-full-hd-action-camera-sport-dvr.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1052x380/6174d35914c884c1a8143cec750a1d63/sj40002.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x347/9121b76593d8f6003a3a06a4a1bafdac/SJ4000-7-colors.jpg",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/600x600/26c4bea76814d65595ed461f8c4ae968/sj4000_action_camera_LRG.jpg"
+          }
+        },
+        "product3": {
+          "id": "3",
+          "title": "GoPro",
+          "category": "IT Gadgets",
+          "description": "Awesome camera",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 400,
+          "discountedPrice": 200,
+          "ordersNeeded": 20,
+          "currentOrders": 2,
+          "status": "reservations",
+          "images": {
+            "image1": "http://placehold.it/560x400.png",
+            "image2": "http://placehold.it/560x400.png",
+            "image3": "http://placehold.it/560x400.png"
+          }
+        }
       },
       "purchases": {
-        "product1": true,
-        "product2": true,
-        "product3": true
+        "product1": {
+          "id": "1",
+          "title": "Seinheiser Earpiece",
+          "category": "IT Gadgets",
+          "description": "An awesome earpiece",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 100,
+          "discountedPrice": 90,
+          "ordersNeeded": 50,
+          "currentOrders": 5,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/b75d4b8908797c4558ccb50a58a15e65/100000178349_03-800.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/320x299/64b457aa1353c465089a499c54862f9e/CX300II_BLK_detail.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/534x383/423411d7e1bfda1f34877ec0613a2168/1239490914.png",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/300x300/ede60c5952cc91cc0e40b3a3ca0643c4/300x300px-LS-b7f42953_0020080304-0020080304.jpg"
+          }
+        },
+        "product2": {
+          "id": "2",
+          "title": "Helicopter Drones",
+          "category": "IT Gadgets",
+          "description": "A awesome drone",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 200,
+          "discountedPrice": 100,
+          "ordersNeeded": 20,
+          "currentOrders": 8,
+          "status": "reservations",
+          "images": {
+            "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/a80a4237e37335643b6afd12df30254f/sj4000-wifi-1080p-full-hd-action-camera-sport-dvr.jpg",
+            "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1052x380/6174d35914c884c1a8143cec750a1d63/sj40002.jpg",
+            "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x347/9121b76593d8f6003a3a06a4a1bafdac/SJ4000-7-colors.jpg",
+            "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/600x600/26c4bea76814d65595ed461f8c4ae968/sj4000_action_camera_LRG.jpg"
+          }
+        },
+        "product3": {
+          "id": "3",
+          "title": "GoPro",
+          "category": "IT Gadgets",
+          "description": "Awesome camera",
+          "submitted": {
+            "userId": "user1",
+            "name": "Kevin Spacey"
+          },
+          "timeSubmitted": 1419920458667,
+          "originalPrice": 400,
+          "discountedPrice": 200,
+          "ordersNeeded": 20,
+          "currentOrders": 2,
+          "status": "reservations",
+          "images": {
+            "image1": "http://placehold.it/560x400.png",
+            "image2": "http://placehold.it/560x400.png",
+            "image3": "http://placehold.it/560x400.png"
+          }
+        }
       }
     }
   },
   "products": {
     "product1": {
+      "id": "1",
       "title": "Seinheiser Earpiece",
       "category": "IT Gadgets",
       "description": "An awesome earpiece",
@@ -74,12 +330,14 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/b75d4b8908797c4558ccb50a58a15e65/100000178349_03-800.jpg",
+        "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/320x299/64b457aa1353c465089a499c54862f9e/CX300II_BLK_detail.jpg",
+        "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/534x383/423411d7e1bfda1f34877ec0613a2168/1239490914.png",
+        "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/300x300/ede60c5952cc91cc0e40b3a3ca0643c4/300x300px-LS-b7f42953_0020080304-0020080304.jpg"
       }
     },
     "product2": {
+      "id": "2",
       "title": "Helicopter Drones",
       "category": "IT Gadgets",
       "description": "A awesome drone",
@@ -94,12 +352,14 @@
       "currentOrders": 8,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/800x800/a80a4237e37335643b6afd12df30254f/sj4000-wifi-1080p-full-hd-action-camera-sport-dvr.jpg",
+        "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1052x380/6174d35914c884c1a8143cec750a1d63/sj40002.jpg",
+        "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x347/9121b76593d8f6003a3a06a4a1bafdac/SJ4000-7-colors.jpg",
+        "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/600x600/26c4bea76814d65595ed461f8c4ae968/sj4000_action_camera_LRG.jpg"
       }
     },
     "product3": {
+      "id": "3",
       "title": "GoPro",
       "category": "IT Gadgets",
       "description": "Awesome camera",
@@ -114,13 +374,14 @@
       "currentOrders": 2,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "http://placehold.it/560x400.png",
+        "image2": "http://placehold.it/560x400.png",
+        "image3": "http://placehold.it/560x400.png"
       }
     },
     "product4": {
-      "title": "Oakley Sunglasses",
+      "id": "4",
+      "title": "Raybans Sunglasses",
       "category": "Accessories",
       "description": "An awesome sunglass",
       "submitted": {
@@ -134,12 +395,11 @@
       "currentOrders": 10,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/833x357/5103efff781732afcc78170bf56bbfd3/Screen_Shot_2015-01-26_at_10.32.03_pm.png"
       }
     },
     "product5": {
+      "id": "5",
       "title": "Daniel Wellington Watch",
       "category": "Accessories",
       "description": "An awesome watch",
@@ -154,12 +414,14 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x460/305f6502582d38e5ff7988306c0718e8/classic_bristol_40_mm_rose_gold_2_.jpg",
+        "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x460/d47a5302995535b7ba0f1dce7c8e7553/0109DW_4.jpg",
+        "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x460/cab23242d58ac9a1f21548d47dda68c3/0109DW_3.jpg",
+        "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/700x460/9c1d4ac3eefa8917280f5c8fb40fb7bf/0109DW_2.jpg"
       }
     },
     "product6": {
+      "id": "6",
       "title": "Amazon Kindle",
       "category": "IT Gadgets",
       "description": "An awesome reading device",
@@ -174,12 +436,13 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/480x507/d89fac1597c37dc205da9a895502ce85/technical._V376689304_.jpg",
+        "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/2281x2937/94d15a9b4aefe615c4ae4422bc0aa0aa/kindle-paperwhite-20131.jpg",
+        "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/2818x2013/cd5937f64e3d0708e186482c987018c8/Amazon_Kindle_Paperwhite_2013_35827154_09.jpg"
       }
     },
     "product7": {
+      "id": "7",
       "title": "WD Harddisk",
       "category": "IT Gadgets",
       "description": "An awesome harddisk",
@@ -194,9 +457,10 @@
       "currentOrders": 5,
       "status": "reservations",
       "images": {
-        "image1": "http://placehold.it/100x100.png",
-        "image2": "http://placehold.it/100x100.png",
-        "image3": "http://placehold.it/100x100.png"
+        "image1": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/850x685/b2e431e5a580c10c0ccc1b32be4f7347/StorageReview-Western-Digital-My-Book-Essential-4TB-Read.jpg",
+        "image2": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/274x184/8bcf6e2f94368dd8cd76ab3de1b7598c/images.jpeg",
+        "image3": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/333x245/bc31e08544dc881d129a85988e5f7e4a/366356-western-digital-my-book-4tb.jpg",
+        "image4": "https://trello-attachments.s3.amazonaws.com/54b9e37c80bc1983237a41ef/1500x1500/cd65b2fe8188ec029d8942730063e4bc/81W-27Sh7VL._SL1500_.jpg"
       },
       "productOptions": {
         "option": "500GB",

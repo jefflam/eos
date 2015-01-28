@@ -6,7 +6,7 @@
       <i class="fa fa-close" ng-click="hideOverlay()"></i>
     </div>
     <h4>SIGN UP</h4>
-    <p>Sign up to post news, articles, events, jobs as well as to comment.</p>
+    <p>Sign up to purchase products and track its' order and delivery status. Your contact details are super safe and we promise NO SPAM. Pinky swear.</p>
     <form ng-keydown="($event.keyCode===13)?signup():0">
       <div class="large-12 columns">
         <div class="input-container">
@@ -24,6 +24,22 @@
         <div class="input-container">
           <input required ng-model="passwordAgain" type="password" id="passwordAgain" placeholder="MySecretPassword">
           <label for="passwordAgain">Password Again</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="address1" type="text" placeholder="21 West Coast Rd" id="address1">
+          <label for="address1">Address Line 1</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="address2" type="text" placeholder="Block 21 #12-12" id="address2">
+          <label for="address2">Address Line 2</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="country" type="text" placeholder="Singapore" id="country">
+          <label for="country">Country</label>
+        </div>
+        <div class="input-container">
+          <input required ng-model="address3" type="text" placeholder="S120219" id="address3">
+          <label for="address3">Postal Code</label>
         </div>
         <a href="#" class="button red" ng-click="signup()">Sign Up</a>
       </div>

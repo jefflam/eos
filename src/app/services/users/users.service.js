@@ -22,6 +22,10 @@ angular.module('eos')
                       ref.child('users').child(authData2.uid).set({
                         id: userId,
                         email: data.email,
+                        address1: data.address1,
+                        address2: data.address2,
+                        address3: data.address3,
+                        country: data.country,
                         name: data.name,
                         password: authData2.password,
                         joined: Firebase.ServerValue.TIMESTAMP,
@@ -88,7 +92,7 @@ angular.module('eos')
         var q = $q.defer();
         var usersRef = new Firebase(FIREBASE_URL + 'users');
 
-        usersRef.child('simplelogin:'+userId).once('value', function(user) {
+        usersRef.child(userId).once('value', function(user) {
           q.resolve(user.val());
         });
 
@@ -113,7 +117,7 @@ angular.module('eos')
         var q = $q.defer();
         var refUsers = new Firebase(FIREBASE_URL + 'users');
 
-        refUsers.child('simplelogin:' + userId).update(data, function(err) {
+        refUsers.child(userId).update(data, function(err) {
           if (err) {
             q.reject(err);
           } else {
