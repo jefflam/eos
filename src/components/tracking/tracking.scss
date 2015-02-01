@@ -1,0 +1,57 @@
+.tracking {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      &.tabs {
+        height: 50px;
+        line-height: 3.2em;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          color: #26A65B;
+          border-bottom: 3px solid #26A65B;
+        }
+        &.active {
+          color: #26A65B;
+          border-bottom: 3px solid #26A65B;
+        }
+      }
+      &.product {
+        border: 2px solid #DDD;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .image {
+          height: 147px;
+          width: 147px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .meta-data {
+          padding-left: 0px;
+          padding-top: 7px;
+          p {
+            text-align: left;
+            margin: 0;
+            font-weight: 100;
+            margin-bottom: 2px;
+            &.title {
+              font-size: 18px;
+            }
+          }
+          .button {
+            height: 40px;
+            margin-top: 10px;
+            border: 2px solid #26A65B;
+          }
+        }
+      }
+    }
+  }
+}

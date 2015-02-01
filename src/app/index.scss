@@ -2,6 +2,7 @@
 @import '../components/footer/footer.scss';
 @import '../components/products/products.scss';
 @import '../components/product/product.scss';
+@import '../components/tracking/tracking.scss';
 
 * {
   margin: 0;
@@ -71,13 +72,18 @@ html, body, p, a, ul, li, span, h1, h2, h3, h4, h5, h6 {
 .modal {
   background-color: #ffffff;
   position: fixed;
-  top: 90px;
-  left: 25%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: auto;
+  height: 520px;
   width: 50%;
-  height: auto;
   box-shadow: 0px 0px 6px #ccc;
   border-radius: 3px;
   z-index: 3;
+  max-width: 800px;
   h4 {
     text-align: center;
     font-weight: 600;
@@ -87,15 +93,6 @@ html, body, p, a, ul, li, span, h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-weight: 600;
     font-size: 14px;
-  }
-  &.product-page {
-    width: 75%;
-    left: 10%;
-    height: auto;
-    p {
-      text-align: left;
-      font-weight: 300;
-    }
   }
 }
 
@@ -200,6 +197,16 @@ form {
       background-color: #EF4836;
       color: #fff;
       border: 3px solid #EF4836;
+    }
+  }
+  &.green {
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #26A65B;
+    color: #26A65B;
+    &:hover {
+      background-color: #26A65B;
+      color: #fff;
+      border: 3px solid #26A65B;
     }
   }
 }

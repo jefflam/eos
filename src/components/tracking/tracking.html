@@ -4,22 +4,31 @@
   <div class="container modal tracking" ng-show="trackingBox">
     <div class="row">
       <ul class="large-12 columns">
-        <li class="tabs large-6 columns">Reserved</li>
-        <li class="tabs large-6 columns">Purchased</li>
+        <li class="tabs large-6 columns" ng-class="{active: reservedProductsTab}" ng-click="changeTab('reservedProducts')">RESERVATIONS</li>
+        <li class="tabs large-6 columns" ng-class="{active: purchasedProductsTab}" ng-click="changeTab('purchasedProducts')">PURCHASES</li>
       </ul>
     </div>
     <div class="row" ng-show="reservedProductsTab">
       <div class="large-12 columns">
         <ul>
           <li class="product" ng-repeat="product in reservedProducts">
-            <div class="image large-3 columns"></div>
-            <div class="meta-data large-9 columns">
+            <div class="image large-4 columns" style="background-image: url('{{product.images.image1}}')"></div>
+            <div class="meta-data large-8 columns">
               <p class="title">{{product.title}}</p>
-              <p class="price">{{product.discountedPrice}}</p>
+              <p class="price">${{product.discountedPrice}}</p>
               <p class="status">{{product.status}}</p>
-              <a href="" class="button red">Make Full Payment</a>
+              <a href="" class="button green tiny" ng-click="purchaseProduct(this.product)">Make Full Payment</a>
             </div>
           </li>
+          <!-- <li class="product">
+            <div class="image large-4 columns" style="background-image: url('http://placehold.it/150x150.png')"></div>
+            <div class="meta-data large-8 columns">
+              <p class="title">Straight Line Persuasion</p>
+              <p class="price">$123.54</p>
+              <p class="status">IN PROCESS</p>
+              <a href="" class="button green tiny">Make Full Payment</a>
+            </div>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -33,6 +42,14 @@
               <p class="price">{{product.discountedPrice}}</p>
               <p class="status">{{product.status}}</p>
               <p class="tracking-code">{{product.trackingCode}}</p>
+            </div>
+          </li>
+          <li class="product">
+            <div class="image large-4 columns" style="background-image: url('http://placehold.it/150x150.png')"></div>
+            <div class="meta-data large-8 columns">
+              <p class="title">Straight Line Persuasion</p>
+              <p class="price">$123.54</p>
+              <p class="status">DELIVERED</p>
             </div>
           </li>
         </ul>

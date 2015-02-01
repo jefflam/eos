@@ -9,14 +9,38 @@ angular.module('eos')
     $scope.reservedProductsTab = true;
     $scope.purchasedProductsTab = false;
 
-    ProductsService.getReservedProducts($scope.user)
-      .then(function(reservedProducts) {
-        $scope.reservedProducts = reservedProducts;
-      });
+    $scope.$on('tracking:show', function(evt, args) {
+      ProductsService.getReservedProducts($scope.userId)
+        .then(function(reservedProducts) {
+          console.log(reservedProducts)
+          $scope.reservedProducts = reservedProducts;
+        });
+    });
 
-    // $scope.showProduct = function(productId) {
-    //   $rootScope.$broadcast('product:show', {productId: productId});
-    // }
+    $scope.changeTab = function(tab) {
+      if (tab === 'reservedProducts') {
+        $scope.reservedProductsTab = true;
+        $scope.purchasedProductsTab = false;
+      } else if (tab === 'purchasedProducts') {
+        $scope.reservedProductsTab = false;
+        $scope.purchasedProductsTab = true;
+      }
+    }
+
+    $scope.purchaseProduct = function(product) {
+      var data = {
+        userId: $scope.userId,
+        productId: product.id,
+        userProductRefId: product.userProductRefId
+      };
+      console.log(product);
+      console.log(data);
+      ProductsService.purchaseProduct(data)
+        .then(function(rsp) {
+          console.log(rsp);
+          console.log('Successfully purchased');
+        });
+    }
 
     $scope.$on('login:success', function(evt, args) {
       $scope.user = args.user.val();

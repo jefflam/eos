@@ -14,7 +14,7 @@
       "country": "Singapore",
       "reservations": {
         "product1": {
-          "id": "1",
+          "id": "product1",
           "title": "Seinheiser Earpiece",
           "category": "IT Gadgets",
           "description": "An awesome earpiece",
@@ -36,7 +36,7 @@
           }
         },
         "product2": {
-          "id": "2",
+          "id": "product2",
           "title": "Helicopter Drones",
           "category": "IT Gadgets",
           "description": "A awesome drone",
@@ -60,7 +60,7 @@
       },
       "purchases": {
         "product1": {
-          "id": "1",
+          "id": "product1",
           "title": "Seinheiser Earpiece",
           "category": "IT Gadgets",
           "description": "An awesome earpiece",
@@ -119,7 +119,7 @@
           }
         },
         "product3": {
-          "id": "3",
+          "id": "product3",
           "title": "GoPro",
           "category": "IT Gadgets",
           "description": "Awesome camera",
@@ -142,7 +142,7 @@
       },
       "purchases": {
         "product2": {
-          "id": "2",
+          "id": "product2",
           "title": "Helicopter Drones",
           "category": "IT Gadgets",
           "description": "A awesome drone",
@@ -179,7 +179,7 @@
       "country": "Singapore",
       "reservations": {
         "product1": {
-          "id": "1",
+          "id": "product1",
           "title": "Seinheiser Earpiece",
           "category": "IT Gadgets",
           "description": "An awesome earpiece",
@@ -201,7 +201,7 @@
           }
         },
         "product2": {
-          "id": "2",
+          "id": "product2",
           "title": "Helicopter Drones",
           "category": "IT Gadgets",
           "description": "A awesome drone",
@@ -223,7 +223,7 @@
           }
         },
         "product3": {
-          "id": "3",
+          "id": "product3",
           "title": "GoPro",
           "category": "IT Gadgets",
           "description": "Awesome camera",
@@ -246,7 +246,7 @@
       },
       "purchases": {
         "product1": {
-          "id": "1",
+          "id": "product1",
           "title": "Seinheiser Earpiece",
           "category": "IT Gadgets",
           "description": "An awesome earpiece",
@@ -268,7 +268,7 @@
           }
         },
         "product2": {
-          "id": "2",
+          "id": "product2",
           "title": "Helicopter Drones",
           "category": "IT Gadgets",
           "description": "A awesome drone",
@@ -290,7 +290,7 @@
           }
         },
         "product3": {
-          "id": "3",
+          "id": "product3",
           "title": "GoPro",
           "category": "IT Gadgets",
           "description": "Awesome camera",
@@ -315,7 +315,7 @@
   },
   "products": {
     "product1": {
-      "id": "1",
+      "id": "product1",
       "title": "Seinheiser Earpiece",
       "category": "IT Gadgets",
       "description": "An awesome earpiece",
@@ -337,7 +337,7 @@
       }
     },
     "product2": {
-      "id": "2",
+      "id": "product2",
       "title": "Helicopter Drones",
       "category": "IT Gadgets",
       "description": "A awesome drone",
@@ -359,7 +359,7 @@
       }
     },
     "product3": {
-      "id": "3",
+      "id": "product3",
       "title": "GoPro",
       "category": "IT Gadgets",
       "description": "Awesome camera",
@@ -380,7 +380,7 @@
       }
     },
     "product4": {
-      "id": "4",
+      "id": "product4",
       "title": "Raybans Sunglasses",
       "category": "Accessories",
       "description": "An awesome sunglass",
@@ -399,7 +399,7 @@
       }
     },
     "product5": {
-      "id": "5",
+      "id": "product5",
       "title": "Daniel Wellington Watch",
       "category": "Accessories",
       "description": "An awesome watch",
@@ -421,7 +421,7 @@
       }
     },
     "product6": {
-      "id": "6",
+      "id": "product6",
       "title": "Amazon Kindle",
       "category": "IT Gadgets",
       "description": "An awesome reading device",
@@ -442,7 +442,7 @@
       }
     },
     "product7": {
-      "id": "7",
+      "id": "product7",
       "title": "WD Harddisk",
       "category": "IT Gadgets",
       "description": "An awesome harddisk",
