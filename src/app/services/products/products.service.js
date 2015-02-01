@@ -55,7 +55,7 @@ angular.module('eos')
         productsRef.on('value', function(purchasedProducts) {
           for (var productId in purchasedProducts.val()) {
             if (purchasedProducts.val().hasOwnProperty(productId)
-              && reservedProducts.val()[productId].status === 'purchased') {
+              && purchasedProducts.val()[productId].status === 'purchased') {
               productRef = new Firebase(FIREBASE_URL + 'products/' + purchasedProducts.val()[productId].productId);
               productRef.on('value', function(product) {
                 products.push(product.val());

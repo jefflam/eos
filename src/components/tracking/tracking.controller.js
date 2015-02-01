@@ -12,7 +12,6 @@ angular.module('eos')
     $scope.$on('tracking:show', function(evt, args) {
       ProductsService.getReservedProducts($scope.userId)
         .then(function(reservedProducts) {
-          console.log(reservedProducts)
           $scope.reservedProducts = reservedProducts;
         });
     });
@@ -21,9 +20,18 @@ angular.module('eos')
       if (tab === 'reservedProducts') {
         $scope.reservedProductsTab = true;
         $scope.purchasedProductsTab = false;
+
+        ProductsService.getReservedProducts($scope.userId)
+          .then(function(reservedProducts) {
+            $scope.reservedProducts = reservedProducts;
+          });
       } else if (tab === 'purchasedProducts') {
         $scope.reservedProductsTab = false;
         $scope.purchasedProductsTab = true;
+        ProductsService.getPurchasedProducts($scope.userId)
+          .then(function(purchasedProducts) {
+            $scope.purchasedProducts = purchasedProducts;
+          });
       }
     }
 
@@ -33,11 +41,9 @@ angular.module('eos')
         productId: product.id,
         userProductRefId: product.userProductRefId
       };
-      console.log(product);
-      console.log(data);
+
       ProductsService.purchaseProduct(data)
         .then(function(rsp) {
-          console.log(rsp);
           console.log('Successfully purchased');
         });
     }
