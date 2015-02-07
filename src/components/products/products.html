@@ -2,7 +2,7 @@
   <div class="large-12 columns">
     <div class="products" ng-controller="ProductsCtrl">
       <ul class="large-12 columns">
-        <a href="" ng-href="#/product/{{product.$id}}" ng-repeat="product in products" ng-click="showProduct(product.$id)">
+        <a href="" ng-href="#/product/{{product.$id}}" ng-repeat="product in products | filter:productFilter" ng-click="showProduct(product.$id)">
           <li class="product">
             <div class="image" style="background-image: url('{{product.images.image1}}')"></div>
             <!-- <img src="{{product.images.image1}}" alt="Product"> -->

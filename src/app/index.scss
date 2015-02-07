@@ -3,6 +3,7 @@
 @import '../components/products/products.scss';
 @import '../components/product/product.scss';
 @import '../components/tracking/tracking.scss';
+@import '../components/admin/admin.scss';
 
 * {
   margin: 0;
@@ -72,14 +73,14 @@ html, body, p, a, ul, li, span, h1, h2, h3, h4, h5, h6 {
 .modal {
   background-color: #ffffff;
   position: fixed;
-  top: 0;
+  top: -250px;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
   overflow: auto;
-  height: 520px;
-  width: 50%;
+  height: 60%;
+  width: 70%;
   box-shadow: 0px 0px 6px #ccc;
   border-radius: 3px;
   z-index: 3;
@@ -208,5 +209,11 @@ form {
       color: #fff;
       border: 3px solid #26A65B;
     }
+  }
+}
+
+@media (max-width: 641px) {
+  .modal {
+    width: 90%;
   }
 }

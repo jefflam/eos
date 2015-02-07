@@ -1,4 +1,7 @@
-.tracking {
+.admin {
+  form {
+    margin-top: 50px;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -12,7 +15,6 @@
         color: #333;
         font-weight: 600;
         cursor: pointer;
-        background-color: #fafafa;
         &:hover {
           color: #26A65B;
           border-bottom: 3px solid #26A65B;

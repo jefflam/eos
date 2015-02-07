@@ -12,12 +12,13 @@
       </ul>
       <ul class="left">
         <li>
-          <li>
-            <a ng-href="" ng-click="showTracking()" ng-show="user" href="">TRACKING</a>
-          </li>
-          <li>
-            <a href="mailto:hello@eossg.com?&subject=Hey guys I would like to request this item&body=Hey!%0D%0A%0D%0A I would love to request this item %0D%0A%0D%0A The name of the item is _______ and you can view the item at this URL _______ %0D%0A%0D%0A In fact, I have a lead on who you may approach for a wholesale/bulk purchase _______ %0D%0A%0D%0A Thanks a lot!" ng-show="user">REQUEST</a>
-          </li>
+          <a ng-href="" ng-click="showTracking()" ng-show="user" href="">TRACKING</a>
+        </li>
+        <li>
+          <a href="mailto:hello@eossg.com?&subject=Hey guys I would like to request this item&body=Hey!%0D%0A%0D%0A I would love to request this item %0D%0A%0D%0A The name of the item is _______ and you can view the item at this URL _______ %0D%0A%0D%0A In fact, I have a lead on who you may approach for a wholesale/bulk purchase _______ %0D%0A%0D%0A Thanks a lot!" ng-show="user">REQUEST</a>
+        </li>
+        <li>
+          <a ng-href="" ng-click="showAdmin()" ng-show="admin" href="">ADMIN</a>
         </li>
       </ul>
       <ul class="right">
@@ -34,20 +35,40 @@
     <div class="title">
       <p class="logo"><a href="/#">EOS (SG)</a></p>
     </div>
+    <div class="menu-left">
+      <ul>
+        <li ng-click="showTrackingSubMenuMobile()">
+          <i class="fa fa-truck"></i>
+        </li>
+      </ul>
+    </div>
     <div class="menu-right">
       <ul>
-        <li ng-click="showProfileSubMenuMobile()" ng-hide="profileSubMenuMobile"></li>
-        <li ng-click="hideProfileSubMenuMobile()" ng-show="profileSubMenuMobile"></li>
+        <li ng-click="showProfileSubMenuMobile()">
+          <i class="fa fa-bars"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="sub-menu left" ng-show="trackingSubMenuMobile">
+      <ul>
+        <li>
+          <a ng-href="" ng-click="showTracking('mobile')" ng-show="user" href="">TRACKING</a>
+        </li>
+        <li>
+          <a href="mailto:hello@eossg.com?&subject=Hey guys I would like to request this item&body=Hey!%0D%0A%0D%0A I would love to request this item %0D%0A%0D%0A The name of the item is _______ and you can view the item at this URL _______ %0D%0A%0D%0A In fact, I have a lead on who you may approach for a wholesale/bulk purchase _______ %0D%0A%0D%0A Thanks a lot!" ng-show="user">REQUEST</a>
+        </li>
+        <li>
+          <a ng-href="" ng-click="showAdmin('mobile')" ng-show="admin" href="">ADMIN</a>
+        </li>
       </ul>
     </div>
     <div class="sub-menu right" ng-show="profileSubMenuMobile">
       <ul>
-        <li><a ng-href="#" ng-click="showSignup()" ng-hide="user">SIGN UP</a></li>
-        <li><a ng-href="#" ng-click="showLogin()" ng-hide="user">LOGIN</a></li>
+        <li><a ng-href="#" ng-click="showSignup('mobile')" ng-hide="user">SIGN UP</a></li>
+        <li><a ng-href="#" ng-click="showLogin('mobile')" ng-hide="user">LOGIN</a></li>
 
-        <li><a ng-href="#" ng-click="logout()" ng-show="user">LOGOUT</a></li>
-        <li><a ng-href="#" ng-show="user">{{ user.name | uppercase }}</a></li>
-        <li><a ng-href="#" ng-click="showPost()" ng-show="user">SUBMIT</a></li>
+        <li><a ng-href="" ng-click="logout('mobile')" ng-show="user">LOGOUT</a></li>
+        <li><a ng-href="" ng-click="showSettings('mobile')" ng-show="user" href="">SETTINGS</a></li>
       </ul>
     </div>
   </nav>

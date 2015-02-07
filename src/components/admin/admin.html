@@ -1,0 +1,145 @@
+<div ng-controller="AdminCtrl">
+  <div class="overlay" ng-click="hideOverlay()" ng-show="adminBox"></div>
+
+  <div class="container modal admin" ng-show="adminBox">
+    <div class="row">
+      <ul class="large-12 columns">
+        <li class="tabs large-6 medium-6 columns" ng-class="{active: currentProductsTab}" ng-click="changeTab('currentProducts')">PRODUCTS</li>
+        <li class="tabs large-6 medium-6 columns" ng-class="{active: newProductTab}" ng-click="changeTab('newProduct')">NEW PRODUCT</li>
+      </ul>
+    </div>
+    <div class="row" ng-show="currentProductsTab">
+      <div class="large-12 columns">
+        <ul>
+          <li class="product" ng-repeat="product in currentProducts">
+            <div class="image large-4 medium-4 columns" style="background-image: url('{{product.images.image1}}')"></div>
+            <div class="meta-data large-8 medium-8 columns">
+              <p class="title">{{product.title}}</p>
+              <p class="price">${{product.discountedPrice}}</p>
+              <p class="status">{{product.status}}</p>
+              <a href="" class="button green tiny" ng-click="changeTab('editProduct', this.product)">Edit Product</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" ng-show="newProductTab">
+      <div class="large-12 columns">
+        <form ng-keydown="($event.keyCode===13)?addProduct():0">
+          <div class="large-12 columns">
+            <div class="input-container">
+              <input required ng-model="new.title" type="text" id="title" placeholder="Nissan GTR">
+              <label for="title">Title</label>
+            </div>
+            <div class="input-container">
+              <textarea required ng-model="new.description" type="text" id="description" placeholder="An awesome car" cols="30" rows="3"></textarea>
+              <label for="description">Description</label>
+            </div>
+            <div class="input-container">
+              <!-- SELECT BOX HERE -->
+              <input required ng-model="new.category" type="text" id="category" placeholder="IT Gadgets">
+              <label for="category">Category</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.originalPrice" type="text" id="originalPrice" placeholder="1200000">
+              <label for="originalPrice">Original Price</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.discountedPrice" type="text" id="discountedPrice" placeholder="400000">
+              <label for="discountedPrice">Discounted Price</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.ordersNeeded" type="text" id="ordersNeeded" placeholder="50">
+              <label for="ordersNeeded">Orders Needed</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.status" type="text" id="status" placeholder="draft">
+              <label for="status">Status</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.image1" type="text" id="image1" placeholder="Image1 URL">
+              <label for="image1">Image 1 URL</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.image2" type="text" id="image2" placeholder="Image2 URL">
+              <label for="image2">Image 2 URL</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.image3" type="text" id="image3" placeholder="Image3 URL">
+              <label for="image3">Image 3 URL</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="new.image4" type="text" id="image4" placeholder="Image4 URL">
+              <label for="image4">Image 4 URL</label>
+            </div>
+            <!-- <div class="input-container">
+              <input required ng-model="new.endDate" type="text" id="endDate" placeholder="12th Feb 2015">
+              <label for="endDate">End Date</label>
+            </div> -->
+            <a href="#" class="button green" ng-click="addProduct()">ADD PRODUCT</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row" ng-show="editProductTab">
+      <div class="large-12 columns">
+        <form ng-keydown="($event.keyCode===13)?editProduct():0">
+          <div class="large-12 columns">
+            <div class="input-container">
+              <input required ng-model="edit.title" type="text" id="title" placeholder="Nissan GTR">
+              <label for="title">Title</label>
+            </div>
+            <div class="input-container">
+              <textarea required ng-model="edit.description" type="text" id="description" placeholder="An awesome car" cols="30" rows="3"></textarea>
+              <label for="description">Description</label>
+            </div>
+            <div class="input-container">
+              <!-- SELECT BOX HERE -->
+              <input required ng-model="edit.category" type="text" id="category" placeholder="IT Gadgets">
+              <label for="category">Category</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.originalPrice" type="text" id="originalPrice" placeholder="1200000">
+              <label for="originalPrice">Original Price</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.discountedPrice" type="text" id="discountedPrice" placeholder="400000">
+              <label for="discountedPrice">Discounted Price</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.ordersNeeded" type="text" id="ordersNeeded" placeholder="50">
+              <label for="ordersNeeded">Orders Needed</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.status" type="text" id="status" placeholder="draft">
+              <label for="status">Status</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.images.image1" type="text" id="image1" placeholder="Image1 URL">
+              <label for="image1">Image 1 URL</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.images.image2" type="text" id="image2" placeholder="Image2 URL">
+              <label for="image2">Image 2 URL</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.images.image3" type="text" id="image3" placeholder="Image3 URL">
+              <label for="image3">Image 3 URL</label>
+            </div>
+            <div class="input-container">
+              <input required ng-model="edit.images.image4" type="text" id="image4" placeholder="Image4 URL">
+              <label for="image4">Image 4 URL</label>
+            </div>
+            <!-- <div class="input-container">
+              <input required ng-model="edit.endDate" type="text" id="endDate" placeholder="12th Feb 2015">
+              <label for="endDate">End Date</label>
+            </div> -->
+            <a href="#" class="button green" ng-click="editProduct()">EDIT PRODUCT</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

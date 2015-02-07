@@ -23,6 +23,32 @@ angular.module('eos')
         q.resolve(syncObject);
         return q.promise;
       },
+      addProduct: function(data) {
+        var q = $q.defer();
+        var productsRef = new Firebase(FIREBASE_URL + 'products');
+        productsRef.push(data, function(err) {
+          if (err) {
+            q.reject(err);
+          } else {
+            q.resolve(productsRef);
+          }
+        });
+
+        return q.promise;
+      },
+      editProduct: function(product) {
+        var q = $q.defer();
+        var productsRef = new Firebase(FIREBASE_URL + 'products/' + product.id);
+        productsRef.update(product, function(err) {
+          if (err) {
+            q.reject(err);
+          } else {
+            q.resolve(productsRef);
+          }
+        });
+
+        return q.promise;
+      },
       getReservedProducts: function(userId) {
         var q = $q.defer();
         var productsRef = new Firebase(FIREBASE_URL + 'users/' + userId + '/products');

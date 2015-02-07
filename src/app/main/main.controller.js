@@ -7,6 +7,7 @@ angular.module('eos')
     $scope.productBox = false;
     $scope.trackingBox = false;
     $scope.settingsBox = false;
+    $scope.adminBox = false;
     $rootScope.noScroll = false;
 
     function hideOverlay() {
@@ -15,6 +16,7 @@ angular.module('eos')
       $scope.productBox = false;
       $scope.trackingBox = false;
       $scope.settingsBox = false;
+      $scope.adminBox = false;
       $rootScope.noScroll = false;
       $state.go('home');
     }
@@ -41,6 +43,10 @@ angular.module('eos')
     });
     $scope.$on('settings:show', function(evt, args) {
       $scope.settingsBox = true;
+      $rootScope.noScroll = true;
+    });
+    $scope.$on('admin:show', function(evt, args) {
+      $scope.adminBox = true;
       $rootScope.noScroll = true;
     });
     $scope.$on('login:success', function(evt, args) {
